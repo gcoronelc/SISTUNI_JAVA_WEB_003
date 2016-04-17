@@ -1,6 +1,4 @@
-![Java Web](https://raw.githubusercontent.com/gcoronelc/SISTUNI_JAVA_WEB_003/master/JavaWeb.png)
-![Java Web](https://raw.githubusercontent.com/gcoronelc/SISTUNI_JAVA_WEB_003/master/promocion.jpg)
-
+![Java Web](https://raw.githubusercontent.com/gcoronelc/SISTUNI_JAVA_WEB_003/master/JavaWeb003.png)
 
 # DESARROLLADOR DE APLICACIONES WEB
 
