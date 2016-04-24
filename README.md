@@ -35,10 +35,17 @@
 - Servlets
 - JSP
 - MVC
+- JSTL
 
 # CLASE 02
 
 - Fecha: 24-MAR-2016
+- n-Tiers vs n-Layers: http://icomparable.blogspot.pe/2008/10/arquitectura-n-tier-o-arquitectura-n.html
+- MVC
+- Sesiones
+- JSTL
+- Listener
+
 
 
 
