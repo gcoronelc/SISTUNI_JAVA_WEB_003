@@ -4,7 +4,7 @@
 			<li><a href="#">Procesos</a>
 				<ul>
 					<li><a href="#">Crear cuenta</a></li>
-					<li><a href="#">Depósito</a></li>
+					<li><a href="javascript: loadPageWork('deposito.jsp')">Depósito</a></li>
 					<li><a href="#">Retiro</a></li>
 					<li><a href="#">Transferencia</a></li>
 					<li><a href="#">Cancelar cuenta</a></li>

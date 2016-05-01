@@ -8,6 +8,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="css/estilos.css" />
 <link rel="stylesheet" type="text/css" href="menu/menu.css" />
+<script type="text/javascript" src="jquery/jquery.js"></script>
+<script type="text/javascript" src="js/utilitario.js"></script>
 <title>EUREKA APP</title>
 </head>
 <body>
