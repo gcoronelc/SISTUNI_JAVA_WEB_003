@@ -1,0 +1,38 @@
+-- Table: sequence
+
+-- DROP TABLE sequence;
+
+CREATE TABLE sequence
+(
+  seq_name character varying(50) NOT NULL,
+  seq_count bigint,
+  CONSTRAINT sequence_pk PRIMARY KEY (seq_name)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE sequence
+  OWNER TO postgres;
+  
+  
+  
+  
+  
+  -- Table: guest
+  
+  -- DROP TABLE guest;
+  
+  CREATE TABLE guest
+  (
+    id bigint NOT NULL,
+    name character varying(100), -- Nombre del invitado
+    signingdate date,
+    CONSTRAINT guest_pk PRIMARY KEY (id)
+  )
+  WITH (
+    OIDS=FALSE
+  );
+  ALTER TABLE guest
+    OWNER TO postgres;
+  COMMENT ON COLUMN guest.name IS 'Nombre del invitado
+';
