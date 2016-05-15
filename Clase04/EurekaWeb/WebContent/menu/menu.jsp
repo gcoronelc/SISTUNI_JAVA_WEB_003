@@ -22,14 +22,14 @@
                 <ul>
                 <li><a href="#">Clientes</a></li>
                 <li><a href="javascript: loadPageWork('conCuenta.jsp')">Cuentas</a></li>
-                <li><a href="#">Movimientos</a></li>
+                <li><a href="javascript: loadPageWork('conMovimientos.jsp')">Movimientos</a></li>
                 </ul>
       </li>
 			<li><a href="#">Reportes</a>
                 <ul>
                 <li><a href="#">Clientes</a></li>
                 <li><a href="#">Cuentas</a></li>
-                <li><a href="#">Movimientos</a></li>
+                <li><a href="javascript: loadPageWork('repoMovimientos.jsp')">Movimientos</a></li>
                 </ul>
       </li>      
 			<li><a href="#">Contacto</a></li>

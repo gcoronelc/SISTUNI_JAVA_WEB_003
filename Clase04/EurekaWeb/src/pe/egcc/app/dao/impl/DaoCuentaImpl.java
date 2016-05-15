@@ -143,7 +143,7 @@ public class DaoCuentaImpl implements DaoCuentaEspec{
           + "TIPOCODIGO, TIPONOMBRE, TIPOACCION, "
           + "MONECODIGO, MONENOMBRE "
           + "FROM V_MOVIMIENTO "
-          + "WHERE CUENCODIGO = = ? ";
+          + "WHERE CUENCODIGO = ? ";
       PreparedStatement pstm = cn.prepareStatement(sql);
       pstm.setString(1, cuenta);
       ResultSet rs = pstm.executeQuery();
