@@ -8,5 +8,27 @@
 </head>
 <body>
 
+  <h1>CONSULTAR CUENTA</h1>
+  
+  <form id="formCuenta">
+    <label>Cuenta: </label>
+    <input type="text" name="cuenta" />
+    <input type="button" value="Consultar" id="btnConsultar" />
+  </form>
+  
+  <div id="divResultado">
+    
+  </div>
+
+  <script type="text/javascript">
+  
+  $("#btnConsultar").click(function(){
+	  var data = $("#formCuenta").serialize();
+	  $.post("CuentaConsulta",data,function(pagina){
+		  $("#divResultado").html(pagina);
+	  });
+  });
+  
+  </script>
 </body>
 </html>

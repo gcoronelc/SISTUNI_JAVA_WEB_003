@@ -1,5 +1,6 @@
 package pe.egcc.app.dao.espec;
 
+import java.util.List;
 import java.util.Map;
 
 public interface DaoCuentaEspec {
@@ -15,7 +16,7 @@ public interface DaoCuentaEspec {
   
   Map<String,Object> conCuenta(String cuenta);
   
-  
+  List<Map<String, ?>> conMovimientos(String cuenta);
   
   
 }

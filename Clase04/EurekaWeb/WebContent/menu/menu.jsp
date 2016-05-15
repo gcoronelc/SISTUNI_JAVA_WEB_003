@@ -21,7 +21,7 @@
 			<li><a href="#">Consultas</a>
                 <ul>
                 <li><a href="#">Clientes</a></li>
-                <li><a href="#">Cuentas</a></li>
+                <li><a href="javascript: loadPageWork('conCuenta.jsp')">Cuentas</a></li>
                 <li><a href="#">Movimientos</a></li>
                 </ul>
       </li>

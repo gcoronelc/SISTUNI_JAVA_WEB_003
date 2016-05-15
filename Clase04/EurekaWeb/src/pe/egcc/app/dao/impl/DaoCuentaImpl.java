@@ -3,6 +3,7 @@ package pe.egcc.app.dao.impl;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.List;
 import java.util.Map;
 
 import pe.egcc.app.dao.espec.DaoCuentaEspec;
@@ -126,6 +127,42 @@ public class DaoCuentaImpl implements DaoCuentaEspec{
       }
     }
     return rec;
+  }
+
+  
+  @Override
+  public List<Map<String, ?>> conMovimientos(String cuenta) {
+    List<Map<String, ?>> lista = null;
+    Connection cn = null;
+    try {
+      cn = AccesoDB.getConnection();
+      String sql = "SELECT SUCUCODIGO, SUCUNOMBRE, "
+          + "CLIECODIGO, CLIENOMBRE, CUENCODIGO, "
+          + "CUENSALDO, CUENESTADO, MOVINUMERO, "
+          + "MOVIFECHA, MOVIIMPORTE, CUENREFERENCIA, "
+          + "TIPOCODIGO, TIPONOMBRE, TIPOACCION, "
+          + "MONECODIGO, MONENOMBRE "
+          + "FROM V_MOVIMIENTO "
+          + "WHERE CUENCODIGO = = ? ";
+      PreparedStatement pstm = cn.prepareStatement(sql);
+      pstm.setString(1, cuenta);
+      ResultSet rs = pstm.executeQuery();
+      lista = JdbcUtil.rsToList(rs);
+      rs.close();
+      pstm.close();
+    } catch (Exception e) {
+      String msg = "Error en el acceso a la BD.";
+      if(e.getMessage() != null && !e.getMessage().isEmpty()){
+        msg += " " + e.getMessage();
+      }
+      throw new RuntimeException(msg);
+    } finally {
+      try {
+        cn.close();
+      } catch (Exception e2) {
+      }
+    }
+    return lista;
   }
 
 }
