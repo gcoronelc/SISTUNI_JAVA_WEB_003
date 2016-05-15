@@ -1,6 +1,4 @@
-![Java Web](https://raw.githubusercontent.com/gcoronelc/SISTUNI_JAVA_WEB_003/master/JavaWeb.png)
-![Java Web](https://raw.githubusercontent.com/gcoronelc/SISTUNI_JAVA_WEB_003/master/promocion.jpg)
-
+![Java Web](https://raw.githubusercontent.com/gcoronelc/SISTUNI_JAVA_WEB_003/master/JavaWeb003.png)
 
 # DESARROLLADOR DE APLICACIONES WEB
 
@@ -37,10 +35,17 @@
 - Servlets
 - JSP
 - MVC
+- JSTL
 
 # CLASE 02
 
 - Fecha: 24-MAR-2016
+- n-Tiers vs n-Layers: http://icomparable.blogspot.pe/2008/10/arquitectura-n-tier-o-arquitectura-n.html
+- MVC
+- Sesiones
+- JSTL
+- Listener
+
 
 
 
